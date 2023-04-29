@@ -296,3 +296,9 @@ double MCT8316::getRate()
 {
     return rate;
 }
+bool MCT8316::hasFault()
+{
+    ICStatusRegister status;
+    readRegister(0, &status);
+    return status.fault;
+}

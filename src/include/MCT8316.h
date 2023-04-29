@@ -152,5 +152,6 @@ public:
     void setOutput(double output);
     double getRotations();
     double getRate();
+    bool hasFault();
 };
 #endif
